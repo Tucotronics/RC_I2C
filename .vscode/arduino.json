@@ -1,0 +1,5 @@
+{
+    "board": "arduino:avr:uno",
+    "port": "COM3",
+    "sketch": "examples\\RC_I2C_Exemplo_1\\RC_I2C_Exemplo_1.ino"
+}

@@ -1,19 +1,17 @@
 #include <Arduino.h>
-#include <Tucotronics_RC_Memo.h>
+#include <Tucotronics_RC_I2C.h>
 
-
-Tucotronics_RC_Memo rele(2, 3, 4, 5);
+Tucotronics_RC_I2C rele(0x20);
 void setup() {
-  // put your setup code here, to run once:
-
+  
 }
 
 void loop() {
-  for (int canal = 1; canal <= 7; canal++){
+  for (int canal = 1; canal <= 8; canal++){
     rele.ligar(canal);
     delay(1000);
   }
-  for (int canal = 1; canal <= 7; canal++){
+  for (int canal = 1; canal <= 8; canal++){
     rele.desligar(canal);
     delay(1000);
   }
